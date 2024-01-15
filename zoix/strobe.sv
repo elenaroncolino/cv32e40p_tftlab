@@ -39,6 +39,7 @@ initial begin
                 $fs_strobe(`TOPLEVEL.data_be_o);
                 $fs_strobe(`TOPLEVEL.cv32e40p_mult.*);
                 $fs_strobe(`TOPLEVEL.cv32e40p_compressed_decoder.*);
+                $fs_strobe(`TOPLEVEL.cv32e40p_int_controller.*);
 
                 #10000; // TMAX Strobe period
         end
