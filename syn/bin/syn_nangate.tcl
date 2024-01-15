@@ -43,6 +43,8 @@ analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult3.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult_FT.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_int_controller.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_int_controller3.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_int_controller_FT.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ex_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu_div.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu.sv
