@@ -25,6 +25,7 @@ analyze -format sverilog -work work ${TECHLIB_PATH}/NangateOpenCellLibrary_cv32e
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_apu_core_pkg.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_fpu_pkg.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_pkg.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/voter.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_if_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_cs_registers.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_register_file_ff.sv
@@ -39,10 +40,14 @@ analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_fifo.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_prefetch_buffer.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_hwloop_regs.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult3.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult_FT.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_int_controller.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ex_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu_div.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu3.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu_FT.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ff_one.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_popcnt.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_apu_disp.sv
