@@ -1,4 +1,4 @@
-module cv32e40p_mult_fault
+module cv32e40p_mult_FT
   import cv32e40p_pkg::*;
 (
     input logic clk,

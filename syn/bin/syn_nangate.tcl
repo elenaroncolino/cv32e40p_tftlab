@@ -28,6 +28,8 @@ analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_pkg.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/voter.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_if_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_cs_registers.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_hamming_decoder.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_hamming_encoder.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_register_file_ff.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_load_store_unit.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_id_stage.sv

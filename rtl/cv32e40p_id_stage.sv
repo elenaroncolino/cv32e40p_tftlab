@@ -1293,7 +1293,7 @@ module cv32e40p_id_stage
   //                                                                    //
   ////////////////////////////////////////////////////////////////////////
 
-  cv32e40p_int_controller #(
+ cv32e40p_int_controller_FT #(
       .PULP_SECURE(PULP_SECURE)
   ) int_controller_i (
       .clk  (clk),

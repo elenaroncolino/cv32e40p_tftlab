@@ -33,7 +33,7 @@ import cv32e40p_pkg::*;
     input  logic ex_ready_i
 );
 
-cv32e40p_mult alu_1
+cv32e40p_alu alu_1
 (
     .clk(clk),
     .rst_n(rst_n),
@@ -58,7 +58,7 @@ cv32e40p_mult alu_1
 );
 
 
-cv32e40p_mult alu_2
+cv32e40p_alu alu_2
 (
     .clk(clk),
     .rst_n(rst_n),
@@ -81,7 +81,7 @@ cv32e40p_mult alu_2
     .ex_ready_i(ex_ready_i)
 );
 
-cv32e40p_mult alu_3
+cv32e40p_alu alu_3
 (
     .clk(clk),
     .rst_n(rst_n),

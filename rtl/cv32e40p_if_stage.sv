@@ -270,7 +270,7 @@ module cv32e40p_if_stage #(
       .pc_o            (pc_if_o)
   );
 
-  cv32e40p_compressed_decoder #(
+  cv32e40p_compressed_decoder_FT #(
       .FPU  (FPU),
       .ZFINX(ZFINX)
   ) compressed_decoder_i (

@@ -1,4 +1,4 @@
-module cv32e40p_compressed_decoder_ft #(
+module cv32e40p_compressed_decoder_FT #(
     parameter FPU   = 0,
     parameter ZFINX = 0
 ) (

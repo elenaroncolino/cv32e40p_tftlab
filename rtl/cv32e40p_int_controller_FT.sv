@@ -81,7 +81,7 @@ voter #(1) voter_irq_sec_ctrl (
     .detected(irq_sec_ctrl_fault)
 );
 
-voter #(32) voter_irq_id_ctrl (
+voter #(5) voter_irq_id_ctrl (
     .in1(s_irq_id_ctrl_o_1),
     .in2(s_irq_id_ctrl_o_2),
     .in3(s_irq_id_ctrl_o_3),
