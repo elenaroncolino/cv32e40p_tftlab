@@ -66,7 +66,7 @@ cv32e40p_mult mult_1
     .clpx_img_i(clpx_img_i),
     .result_o(result_1),
     .multicycle_o(multicycle_1),
-    .mulh_active_o1(mulh_active_1),
+    .mulh_active_o(mulh_active_1),
     .ready_o(ready_1),
     .ex_ready_i(ex_ready_i)
 );
@@ -92,7 +92,7 @@ cv32e40p_mult mult_2
     .clpx_img_i(clpx_img_i),
     .result_o(result_2),
     .multicycle_o(multicycle_2),
-    .mulh_active_o1(mulh_active_2),
+    .mulh_active_o(mulh_active_2),
     .ready_o(ready_2),
     .ex_ready_i(ex_ready_i)
 );
@@ -117,7 +117,7 @@ cv32e40p_mult mult_3
     .clpx_img_i(clpx_img_i),
     .result_o(result_3),
     .multicycle_o(multicycle_3),
-    .mulh_active_o1(mulh_active_3),
+    .mulh_active_o(mulh_active_3),
     .ready_o(ready_3),
     .ex_ready_i(ex_ready_i)
 );

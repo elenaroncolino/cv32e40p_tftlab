@@ -38,7 +38,7 @@ module cv32e40p_mult_FT
   logic s_ready_1, s_ready_2, s_ready_3;
   logic result_fault, multicycle_fault, mulh_fault, ready_fault, fault;
 
-  cv32e40p_mult mult3 (
+  cv32e40p_mult3 mult3 (
       .clk(clk),
       .rst_n(rst_n),
       .enable_i(enable_i),
