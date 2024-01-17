@@ -10,7 +10,18 @@
 # Set fault generation constraints
 FaultGenerate
 {
+    #ALU_TEST_GOLDEN
     #NA [0,1] { PORT "cv32e40p_top.core_i.ex_stage_i.alu_i.**" } 
+
+    #MULT_TEST_GOLDEN
+    NA [0,1] { PORT "cv32e40p_top.core_i.ex_stage_i.mult_i.**" }
+
+    #COMPRESSED_DECODER_TEST_GOLDEN
+    #NA [0,1] { PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.**" }
+
+    #INTERRUPT_CONTROLLER_TEST_GOLDEN
+    #NA [0,1] { PORT "cv32e40p_top.core_i.id_stage_i.int_controller_i.**" }
+
     #NA [0,1] { PORT "cv32e40p_top.core_i.**" } 
-    NA [0,1] { PORT "cv32e40p_top.**" }  
+    #NA [0,1] { PORT "cv32e40p_top.**" }  
 }

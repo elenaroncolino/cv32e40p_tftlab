@@ -20,7 +20,6 @@ test1:
 	sw s11, 8(sp)
 	addi s0, sp, 112     # set up s0 to point to start of stack frame
 
-
     # You can write your code here 
 
     li a0, 0xCAFECAFE    # return value
