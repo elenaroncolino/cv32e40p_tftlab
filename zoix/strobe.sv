@@ -11,7 +11,7 @@ module strobe;
 
 // Inject faults
 initial begin
-
+        // force `TOPLEVEL. = stuck_value
         $display("ZOIX INJECTION");
         //$fs_inject;       // by default
 

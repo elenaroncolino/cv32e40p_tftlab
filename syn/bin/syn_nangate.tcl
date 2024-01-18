@@ -107,6 +107,8 @@ uniquify -force
 compile_ultra -no_autoungroup 
 
 report_timing > ${LOG_PATH}/report_timing.log
+report_area > ${LOG_PATH}/report_area.log
+report_power > ${LOG_PATH}/report_power.log
 change_names -hierarchy -rules verilog
 write -hierarchy -format verilog -output "${GATE_PATH}/${TOPLEVEL}.v"
 write -hierarchy -format ddc     -output "${GATE_PATH}/${TOPLEVEL}.ddc"
