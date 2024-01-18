@@ -1,6 +1,7 @@
 #tar -xf syn.tar.gz
 
 cd ..
+make clean
 make synthesis/nangate45
 make questa/compile	
 make compile_sbst
