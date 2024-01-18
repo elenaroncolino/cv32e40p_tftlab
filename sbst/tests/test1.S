@@ -3,52 +3,70 @@
 .type test1, @function
 
 test1:
-	# ABI prologue
-	addi sp, sp, -112     # allocate 112 bytes on the stack
-	sw ra, 104(sp)        # save return address
-	sw s0, 96(sp)         # save callee-saved registers
-	sw s1, 88(sp)
-	sw s2, 80(sp)
-	sw s3, 72(sp)
-	sw s4, 64(sp)
-	sw s5, 56(sp)
-	sw s6, 48(sp)
-	sw s7, 40(sp)
-	sw s8, 32(sp)
-	sw s9, 24(sp)
-	sw s10, 16(sp)
-	sw s11, 8(sp)
-	addi s0, sp, 112     # set up s0 to point to start of stack frame
+    # ABI prologue
+    addi sp, sp, -112     # allocate 112 bytes on the stack
+    sw ra, 104(sp)        # save return address
+    sw s0, 96(sp)         # save callee-saved registers
+    sw s1, 88(sp)
+    sw s2, 80(sp)
+    sw s3, 72(sp)
+    sw s4, 64(sp)
+    sw s5, 56(sp)
+    sw s6, 48(sp)
+    sw s7, 40(sp)
+    sw s8, 32(sp)
+    sw s9, 24(sp)
+    sw s10, 16(sp)
+    sw s11, 8(sp)
+    addi s0, sp, 112     # set up s0 to point to the start of the stack frame
 
+    # Test ALU unit
+    li s1, 5
+    li s2, 7
 
-    # You can write your code here 
+    add s3, s1, s2       # Addition
+    sub s4, s3, s1       # Subtraction
+    and s5, s1, s2       # Bitwise AND
+    or  s6, s3, s5       # Bitwise OR
+    xor s7, s5, s1       # Bitwise XOR
+    sll s8, s1, 2        # Shift Left Logical
+    srl s9, s2, 1        # Shift Right Logical
+    seqz s10, s1         # Set if equal to zero
+    snez s11, s2         # Set if not equal to zero
 
-    li a0, 0xCAFECAFE    # return value
+    # Test multiplier unit
+    li s3, 3
+    li s4, 4
+
+    mul s5, s3, s4    # Multiplication
+
+    # Test interrupt controller unit
+    # Add instructions here to generate interrupts and test the controller
+
+    # Test compressed decoder unit
+    # Add instructions here to test the compressed decoder
+
 
 
     # ABI epilogue
-	lw s11, 8(sp)        # restore callee-saved registers
-	lw s10, 16(sp)
-	lw s9, 24(sp)
-	lw s8, 32(sp)
-	lw s7, 40(sp)
-	lw s6, 48(sp)
-	lw s5, 56(sp)
-	lw s4, 64(sp)
-	lw s3, 72(sp)
-	lw s2, 80(sp)
-	lw s1, 88(sp)
-	lw s0, 96(sp)
-	lw ra, 104(sp)       # restore return address
-	addi sp, sp, 112     # deallocate stack space
-	jr ra                # return to caller
-
-
+    lw s11, 8(sp)        # restore callee-saved registers
+    lw s10, 16(sp)
+    lw s9, 24(sp)
+    lw s8, 32(sp)
+    lw s7, 40(sp)
+    lw s6, 48(sp)
+    lw s5, 56(sp)
+    lw s4, 64(sp)
+    lw s3, 72(sp)
+    lw s2, 80(sp)
+    lw s1, 88(sp)
+    lw s0, 96(sp)
+    lw ra, 104(sp)       # restore return address
+    addi sp, sp, 112     # deallocate stack space
+    jr ra                # return to caller
 
 # READ/WRITE VARIABLES
-
 .section .data
 
 # READ-ONLY VARIABLES
-
 .section .rodata
