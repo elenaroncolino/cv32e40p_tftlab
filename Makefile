@@ -259,7 +259,7 @@ $(CURDIR)/run/zoix:
 $(CURDIR)/run/zoix_timing:
 	mkdir -pv $@
 
-$(CURDIR)/run/zoix/zoix.sim: zoix/clean
+$(CURDIR)/run/zoix/zoix.sim:
 	mkdir -pv $(CURDIR)/run/zoix
 
 	cd $(CURDIR)/run/zoix && \

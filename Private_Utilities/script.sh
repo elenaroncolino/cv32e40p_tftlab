@@ -6,6 +6,7 @@ make synthesis/nangate45
 make questa/compile	
 make compile_sbst
 make questa/lsim/gate/shell  
+make zoix/clean
 make zoix/compile
 make zoix/lsim                       
 make zoix/fgen/saf					                
