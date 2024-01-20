@@ -45,7 +45,7 @@ cv32e40p_int_controller #(.PULP_SECURE(PULP_SECURE)) int_controller_1
     .irq_i(irq_i),
     .irq_sec_i(irq_sec_i),
 
-    .irq_req_ctrl_o(irq_req_ctrl_o),
+    .irq_req_ctrl_o(irq_req_ctrl_o_1),
     .irq_sec_ctrl_o(irq_sec_ctrl_o_1),
     .irq_id_ctrl_o(irq_id_ctrl_o_1),
     .irq_wu_ctrl_o(irq_wu_ctrl_o_1),
@@ -64,7 +64,7 @@ cv32e40p_int_controller #(.PULP_SECURE(PULP_SECURE)) int_controller_2
     .irq_i(irq_i),
     .irq_sec_i(irq_sec_i),
 
-    .irq_req_ctrl_o(irq_req_ctrl_o),
+    .irq_req_ctrl_o(irq_req_ctrl_o_2),
     .irq_sec_ctrl_o(irq_sec_ctrl_o_2),
     .irq_id_ctrl_o(irq_id_ctrl_o_2),
     .irq_wu_ctrl_o(irq_wu_ctrl_o_2),
@@ -83,7 +83,7 @@ cv32e40p_int_controller #(.PULP_SECURE(PULP_SECURE)) int_controller_3
     .irq_i(irq_i),
     .irq_sec_i(irq_sec_i),
 
-    .irq_req_ctrl_o(irq_req_ctrl_o),
+    .irq_req_ctrl_o(irq_req_ctrl_o_3),
     .irq_sec_ctrl_o(irq_sec_ctrl_o_3),
     .irq_id_ctrl_o(irq_id_ctrl_o_3),
     .irq_wu_ctrl_o(irq_wu_ctrl_o_3),

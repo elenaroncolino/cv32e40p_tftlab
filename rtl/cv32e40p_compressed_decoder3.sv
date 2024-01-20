@@ -30,7 +30,7 @@ cv32e40p_compressed_decoder #(.FPU(FPU), .ZFINX(ZFINX)) compressed_decoder_1
 cv32e40p_compressed_decoder #(.FPU(FPU), .ZFINX(ZFINX)) compressed_decoder_2 (
     .instr_i(instr_i),
     .instr_o(instr_o_2),
-    .is_compressed_o(is_compressed_2),
+    .is_compressed_o(is_compressed_o_2),
     .illegal_instr_o(illegal_instr_o_2)
 );
 
@@ -38,7 +38,7 @@ cv32e40p_compressed_decoder #(.FPU(FPU), .ZFINX(ZFINX)) compressed_decoder_3
 (
     .instr_i(instr_i),
     .instr_o(instr_o_3),
-    .is_compressed_o(is_compressed_3),
+    .is_compressed_o(is_compressed_o_3),
     .illegal_instr_o(illegal_instr_o_3)
 );
 

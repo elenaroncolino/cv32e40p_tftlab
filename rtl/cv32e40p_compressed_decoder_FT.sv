@@ -30,7 +30,7 @@ cv32e40p_compressed_decoder3 #(.FPU(FPU), .ZFINX(ZFINX)) compressed_decoder3
 
     .instr_o_3(s_instr_o_3),
     .is_compressed_o_3(s_is_compressed_o_3),
-    .illegal_instr_o_3(s_illegal_instr_o_2)
+    .illegal_instr_o_3(s_illegal_instr_o_3)
 );
 
 voter #(32) voter_instr (

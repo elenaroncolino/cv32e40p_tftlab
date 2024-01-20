@@ -69,7 +69,13 @@ initial begin
                 //$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_mcycle.detected);
                 //$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_mulh.detected);
                 //$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_ready.detected);
-                // $fs_strobe(`TOPLEVEL.cv32e40p_core.cv32e40p_id_stage.cv32e40p_int_controller_FT.fault);
+
+                 $fs_strobe(`TOPLEVEL.core_i.id_stage_i.int_controller_i.voter_irq_req_ctrl.detected);
+                 $fs_strobe(`TOPLEVEL.core_i.id_stage_i.int_controller_i.voter_irq_sec_ctrl.detected);
+                 $fs_strobe(`TOPLEVEL.core_i.id_stage_i.int_controller_i.voter_irq_id_ctrl.detected);
+                 $fs_strobe(`TOPLEVEL.core_i.id_stage_i.int_controller_i.voter_irq_wu_ctrl.detected);
+                 $fs_strobe(`TOPLEVEL.core_i.id_stage_i.int_controller_i.voter_mip.detected);
+
                 // $fs_strobe(`TOPLEVEL.cv32e40p_core.cv32e40p_if_stage.cv32e40p_compressed_decoder_FT.fault);
 
 

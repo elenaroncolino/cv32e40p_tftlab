@@ -40,7 +40,7 @@ cv32e40p_int_controller3 #(.PULP_SECURE(PULP_SECURE)) int_controller3
     .irq_sec_i(irq_sec_i),
 
     .irq_req_ctrl_o_1(s_irq_req_ctrl_o_1),
-    .irq_sec_ctrl_o_1(s_irq_sec_ctrl_o_2),
+    .irq_sec_ctrl_o_1(s_irq_sec_ctrl_o_1),
     .irq_id_ctrl_o_1(s_irq_id_ctrl_o_1),
     .irq_wu_ctrl_o_1(s_irq_wu_ctrl_o_1),
 
