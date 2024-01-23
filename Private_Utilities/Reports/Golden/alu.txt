@@ -1,0 +1,64 @@
+Version("1.1")
+Date("01/19/24 01:39:53")
+User("s314703")
+Tool("FMGR")
+Info("  Type:    Fault Coverage Report")
+Info("  Version: T-2022.06-SP2 (64-bit, Nov 15 2022)")
+Info("  Models:  All")
+Info("  Classes: All")
+
+FunctionalBlocks{
+     1 design {
+           1  sbst 0ps {F:17992 ND:4066 DD:8890 PD:42 NC:1568 NO:3364 NS:62}
+    }
+}
+
+FaultInfo{
+    FubNum;
+    TestNum;
+    Attempts;
+    NumPot;
+}
+
+FaultList{
+
+Total             ND             DD           PD             NC             NO           NS Scope
+----- -------------- -------------- ------------ -------------- -------------- ------------ -----
+17992 4066  (22.60%) 8890  (49.41%) 42   (0.23%) 1568   (8.71%) 3364  (18.70%) 62   (0.34%) cv32e40p_top
+17992 4066  (22.60%) 8890  (49.41%) 42   (0.23%) 1568   (8.71%) 3364  (18.70%) 62   (0.34%) -core_i
+17992 4066  (22.60%) 8890  (49.41%) 42   (0.23%) 1568   (8.71%) 3364  (18.70%) 62   (0.34%) --ex_stage_i
+17992 4066  (22.60%) 8890  (49.41%) 42   (0.23%) 1568   (8.71%) 3364  (18.70%) 62   (0.34%) ---alu_i (1363 hidden instances, 11248 faults)
+ 5972 1128  (18.89%) 3090  (51.74%) 42   (0.70%)  659  (11.03%)  997  (16.69%) 56   (0.94%) ----alu_div_i (775 hidden instances, 5972 faults)
+  340  337  (99.12%)    0   (0.00%)  0   (0.00%)    0   (0.00%)    3   (0.88%)  0   (0.00%) ----popcnt_i (39 hidden instances, 340 faults)
+  432   44  (10.19%)  156  (36.11%)  0   (0.00%)  114  (26.39%)  118  (27.31%)  0   (0.00%) ----ff_one_i (63 hidden instances, 432 faults)
+}
+#------------------------------------------------------------------------------
+# Faults listed:       Prime: 0        Total: 0
+#------------------------------------------------------------------------------
+# Fault Coverage Summary
+#
+#                                        Prime             Total
+#------------------------------------------------------------------------------
+# Total Faults:                          17992             17992
+#
+# Dropped Detected                 DD     8890  49.41%      8890  49.41%
+# Dropped Potential                PD       42   0.23%        42   0.23%
+# Not Detected                     ND     4066  22.60%      4066  22.60%
+# Not Strobed                      NS       62   0.34%        62   0.34%
+# Not Observed                     NO     3364  18.70%      3364  18.70%
+# Not Controlled                   NC     1568   8.71%      1568   8.71%
+#
+# Faults not detected yet:
+#   Not simulated yet:                    4994  27.76%      4994  27.76%
+#   Simulated 1 to 5 times:               4108  22.83%      4108  22.83%
+#   Simulated 6 to 10 times:                 0   0.00%         0   0.00%
+#   Simulated > 10 times:                    0   0.00%         0   0.00%
+#
+# Faults potentially detected:
+#   Possible 1 to 5 times:                  42   0.23%        42   0.23%
+#   Possible 6 to 10 times:                  0   0.00%         0   0.00%
+#   Possible > 10 times:                     0   0.00%         0   0.00%
+#
+# Test Coverage                                 49.53%            49.53%
+# Fault Coverage                                49.53%            49.53%
+#------------------------------------------------------------------------------

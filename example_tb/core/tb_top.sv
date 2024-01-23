@@ -169,4 +169,11 @@ module tb_top #(
   end
 `endif
 
+//`ifdef GATE_LEVEL_TOP
+//    initial begin  
+    //force wrapper_i.top_i.core_i.ex_stage_i.alu_i.voter_result.U130.S = 0;
+//    force wrapper_i.top_i.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.A = 0;
+//    end
+//`endif
+
 endmodule  // tb_top

@@ -1,0 +1,72 @@
+Version("1.1")
+Date("01/21/24 01:31:12")
+User("s314703")
+Tool("FMGR")
+Info("  Type:    Fault Coverage Report")
+Info("  Version: T-2022.06-SP2 (64-bit, Nov 15 2022)")
+Info("  Models:  All")
+Info("  Classes: All")
+
+FunctionalBlocks{
+     1 design {
+           1  sbst 0ps {F:20 ND:7 DD:6 NO:7}
+    }
+}
+
+FaultInfo{
+    FubNum;
+    TestNum;
+    Attempts;
+    NumPot;
+}
+
+FaultList{
+    <  1    1    1    0> DD 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.A1"}
+    <  1    1    1    0> DD 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.A2"}
+    <  1    1    1    0> DD 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.ZN"}
+    <  0    0    1    0> ND 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.A1"}
+    <  0    0    1    0> ND 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.A2"}
+    <  1    1    1    0> DD 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.ZN"}
+    <  0    0    1    0> ND 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.A"}
+    <  0    0    0    0> NO 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.B1"}
+    <  0    0    0    0> NO 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.B2"}
+    <  1    1    1    0> DD 0 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.ZN"}
+    <  0    0    0    0> NO 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.A1"}
+    <  0    0    0    0> NO 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.A2"}
+    <  1    1    1    0> DD 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U5.ZN"}
+    <  0    0    0    0> NO 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.A1"}
+    <  0    0    0    0> NO 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.A2"}
+    <  0    0    1    0> ND 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U4.ZN"}
+    <  0    0    0    0> NO 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.A"}
+    <  0    0    1    0> ND 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.B1"}
+    <  0    0    1    0> ND 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.B2"}
+    <  0    0    1    0> ND 1 {PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.U3.ZN"}
+}
+#------------------------------------------------------------------------------
+# Faults listed:       Prime: 20        Total: 20
+#------------------------------------------------------------------------------
+# Fault Coverage Summary
+#
+#                                        Prime             Total
+#------------------------------------------------------------------------------
+# Total Faults:                             20                20
+#
+# Dropped Detected                 DD        6  30.00%         6  30.00%
+# Dropped Potential                PD        0   0.00%         0   0.00%
+# Not Detected                     ND        7  35.00%         7  35.00%
+# Not Observed                     NO        7  35.00%         7  35.00%
+#
+# Faults not detected yet:
+#   Not simulated yet:                       7  35.00%         7  35.00%
+#   Simulated 1 to 5 times:                  7  35.00%         7  35.00%
+#   Simulated 6 to 10 times:                 0   0.00%         0   0.00%
+#   Simulated > 10 times:                    0   0.00%         0   0.00%
+#
+# Faults potentially detected:
+#   Possible 1 to 5 times:                   0   0.00%         0   0.00%
+#   Possible 6 to 10 times:                  0   0.00%         0   0.00%
+#   Possible > 10 times:                     0   0.00%         0   0.00%
+#
+# Test Coverage                                 30.00%            30.00%
+# Fault Coverage                                30.00%            30.00%
+#------------------------------------------------------------------------------

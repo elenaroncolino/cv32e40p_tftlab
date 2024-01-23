@@ -11,9 +11,15 @@
 FaultGenerate
 {
     #NA [0,1] { PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.compressed_decoder3.**" } 
-    NA [0,1] { PORT "cv32e40p_top.core_i.id_stage_i.int_controller_i.int_controller3.**" } 
+    #NA [0,1] { PORT "cv32e40p_top.core_i.id_stage_i.int_controller_i.int_controller3.**" } 
     #NA [0,1] { PORT "cv32e40p_top.core_i.ex_stage_i.mult_i.mult3.**" }
     #NA [0,1] { PORT "cv32e40p_top.core_i.ex_stage_i.alu_i.alu3.**" } 
     #NA [0,1] { PORT "cv32e40p_top.core_i.**" } 
-    #NA [0,1] { PORT "cv32e40p_top.**" }  
+    NA [0,1] { PORT "cv32e40p_top.**" }  
+    
+
+    #Faults generated for the voter analysis
+    #NA [0,1] { PORT "cv32e40p_top.core_i.ex_stage_i.alu_i.voter_result.**" }
+    #NA [0,1] { PORT "cv32e40p_top.core_i.if_stage_i.compressed_decoder_i.voter_illegal_instr.**" } 
+
 }

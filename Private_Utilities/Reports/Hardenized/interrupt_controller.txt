@@ -1,0 +1,65 @@
+Version("1.1")
+Date("01/20/24 17:52:28")
+User("s317644")
+Tool("FMGR")
+Info("  Type:    Fault Coverage Report")
+Info("  Version: T-2022.06-SP2 (64-bit, Nov 15 2022)")
+Info("  Models:  All")
+Info("  Classes: All")
+
+FunctionalBlocks{
+     1 design {
+           1  sbst 0ps {F:2172 ND:305 NC:229 NO:1530 NS:108}
+    }
+}
+
+FaultInfo{
+    FubNum;
+    TestNum;
+    Attempts;
+    NumPot;
+}
+
+FaultList{
+
+Total            ND            NC             NO            NS Scope
+----- ------------- ------------- -------------- ------------- -----
+ 2172 305  (14.04%) 229  (10.54%) 1530  (70.44%) 108   (4.97%) cv32e40p_top
+ 2172 305  (14.04%) 229  (10.54%) 1530  (70.44%) 108   (4.97%) -core_i
+ 2172 305  (14.04%) 229  (10.54%) 1530  (70.44%) 108   (4.97%) --id_stage_i
+ 2172 305  (14.04%) 229  (10.54%) 1530  (70.44%) 108   (4.97%) ---int_controller_i
+ 2172 305  (14.04%) 229  (10.54%) 1530  (70.44%) 108   (4.97%) ----int_controller3
+  736 153  (20.79%) 115  (15.62%)  432  (58.70%)  36   (4.89%) -----int_controller_2 (100 hidden instances, 736 faults)
+  730  76  (10.41%)  76  (10.41%)  542  (74.25%)  36   (4.93%) -----int_controller_3 (96 hidden instances, 730 faults)
+  706  76  (10.76%)  38   (5.38%)  556  (78.75%)  36   (5.10%) -----int_controller_1 (94 hidden instances, 706 faults)
+}
+#------------------------------------------------------------------------------
+# Faults listed:       Prime: 0        Total: 0
+#------------------------------------------------------------------------------
+# Fault Coverage Summary
+#
+#                                        Prime             Total
+#------------------------------------------------------------------------------
+# Total Faults:                           2172              2172
+#
+# Dropped Detected                 DD        0   0.00%         0   0.00%
+# Dropped Potential                PD        0   0.00%         0   0.00%
+# Not Detected                     ND      305  14.04%       305  14.04%
+# Not Strobed                      NS      108   4.97%       108   4.97%
+# Not Observed                     NO     1530  70.44%      1530  70.44%
+# Not Controlled                   NC      229  10.54%       229  10.54%
+#
+# Faults not detected yet:
+#   Not simulated yet:                    1867  85.96%      1867  85.96%
+#   Simulated 1 to 5 times:                305  14.04%       305  14.04%
+#   Simulated 6 to 10 times:                 0   0.00%         0   0.00%
+#   Simulated > 10 times:                    0   0.00%         0   0.00%
+#
+# Faults potentially detected:
+#   Possible 1 to 5 times:                   0   0.00%         0   0.00%
+#   Possible 6 to 10 times:                  0   0.00%         0   0.00%
+#   Possible > 10 times:                     0   0.00%         0   0.00%
+#
+# Test Coverage                                  0.00%             0.00%
+# Fault Coverage                                 0.00%             0.00%
+#------------------------------------------------------------------------------
